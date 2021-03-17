@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		table{width: 100%
+		}
+		
+		td {
+			border: 1px solid black;
+			height: 300px
+			width:32%;
+		}
+
+		.chocolate{
+			width:100%;
+			height:400px;
+			background-color: pink
+			background-size:contain;
+			background-repeat: no-repeat;
+		}
+
+		#chocolate1{
+			background-image: url(caramel.png);
+		}
+
+		#chocolate2{
+			background-image:url(heart.png);
+			background-size:contain;
+		}
+
+		#chocolate3{
+			background-image:url(truffle.png);
+			background-size:contain;
+
+		}
+
+		#chocolate4{
+			background-image:url(almonds.png);
+			background-size:contain;
+		}
+
+		#textbok{
+			width:400px;
+			height:100px;
+			border:1px solid black;
+		}
+	</style>
+	<title></title>
+</head>
+<body>
+
+
+<center><h1>click a chocolate and get a fortune!</h1>
+	<table></center>
+		<tr>
+			<td>
+				<div class="chocolate" id=chocolate1></div>
+			</td>
+			<td>
+				<div class="chocolate" id=chocolate2></div>
+			</td>
+			<td>
+				<div class="chocolate" id=chocolate3></div>
+			</td>
+
+			<td>
+				<div class="chocolate" id=chocolate4></div>
+			</td>
+
+		</tr>
+
+		<div id='textbox'>
+			
+		</div>
+
+	</table>
+
+	<script type="text/javascript">
+	 var fortune1 = document.getElementById("chocolate1");
+	 var box = document.getElementById('textbox');
+
+	 fortune1.addEventListener("click",function(){
+	 	box.innerText = 'you will live a very long life!'
+
+	 })
+
+	 var fortune2 = document.getElementById("chocolate2");
+	 var box = document.getElementById('textbox');
+
+	 fortune2.addEventListener("click",function(){
+	 	box.innerText = 'something good will happen to you in the next week'
+
+	 })
+
+	  var fortune3 = document.getElementById("chocolate3");
+	 var box = document.getElementById('textbox');
+
+	 fortune3.addEventListener("click",function(){
+	 	box.innerText = 'you will discover a secret talent of yours soon'
+
+	 })
+
+	  var fortune4 = document.getElementById("chocolate4");
+	 var box = document.getElementById('textbox');
+
+	 fortune4.addEventListener("click",function(){
+	 	box.innerText = 'someone will confess their love to you tomorrow'
+
+	 })
+
+
+	</script>
+
+</body>
+</html>

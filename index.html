@@ -13,67 +13,94 @@
 		background-image:url(mirror.png);
 		background-size:contain;
 		background-repeat: no-repeat;
-		background-color: white
+		position:relative;
 
+	}
 
+	#title{
+		font-family: 'Dancing Script';
+		font-size: xx-large;
+		color: darkblue
 	}
 
 
 	#teacup{
 		width:225px;
 		height:300px;
-		background-image:url(https://www.seekpng.com/png/detail/64-642497_antique-tea-cups-tea-party-tea-sets-vintage.png);
+		background-image:url(teacup.png);
 		background-size:contain;
 		background-repeat: no-repeat;
-		background-color: white
 
 	}
 
 	#chand{
 		width:225px;
 		height:300px;
-		background-image:url(https://www.pngitem.com/pimgs/m/34-344582_transparent-background-chandelier-png-png-download.png);
+		background-image:url(chand.png);
 		background-size:contain;
 		background-repeat: no-repeat;
-		background-color: white
+
+	}
+
+
+	
+
+	.thing {display:inline-block;
+			position:relative;
+			text-align:center;
+
+	}
+
+	a{
+		font-family: 'Dancing Script';
+		text-decoration:none;
+		
+		font-size:xx-large;
+
 
 	}
 
 
 
-	#link{
-		position: relative;
-		left:40%;
-		width:70px;
+	.link{
+		position:relative;
 		top:40%;
-		font-family: 'Dancing Script'
 
 	}
 
 
-		body {background-color: white}
+		body {background-color: #ffcc99}
 	</style>
 </head>
 <body>
 
-	<p>Kareena's Website!!</p>
-	
+	<center><p id=title>Kareena's Website!!</p></center>
 
-<a href="journal.html"><div id="mirror">
+	<center>
 
-<div id="link">journal</div>
+<div id="mirror" class="thing">
 
-</div>
-
-<div id="teacup"> 
-	
-</div>
-
-<div id="chand"> 
-	
-</div>
+<a href="journal.html"><div class="link">journal</div>
 
 </a>
+
+</div>
+
+<div id="teacup" class="thing">
+
+<a href="chocolatebox.html"><div class="link">chocolate fortunes</div>
+
+</a> 
+	
+</div>
+
+<div id="chand" class="thing"> 
+	<div style="opacity:0;">journal</div>
+
+	
+</div>
+
+</center>
 
 </body>
 </html>
