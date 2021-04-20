@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style type="text/css">
+    .cookies {
+        width: 200px;
+        height: 125px;
+        margin: 5px;
+        display: inline-block;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(https://www.nicepng.com/png/detail/88-886589_png-gummy-bear-transparent-gummy-bear-gummygoods-gummy.png);
+    }
+    </style>
+</head>
+
+<body> 
+
+
+    <center><h1>my gummy bear timer!</h1></center>
+    <script type="text/javascript">
+    function makeCookie() {
+
+        var cookie = document.createElement('div'); //this creates a div tag//
+        cookie.classList.add('cookies'); //this gives the div tag the class of cookies//
+        document.body.appendChild(cookie) //this puts the div with the class of cookies in the body//
+
+    }
+
+setInterval(makeCookie, 1000)
+    </script>
+</body>
+
+</html>

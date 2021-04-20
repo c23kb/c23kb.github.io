@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		
+		#picture{
+			width:500px;
+			height:500px;
+			background-color:lightpink;
+			background-position: center;
+			background-size:contain;
+			background-repeat: no-repeat;
+
+		
+		}
+	</style>
+
+</head>
+<body>
+
+	<center></center><h3> What cuisine you should have for lunch today!! </h3>
+	<div id="picture"></div>
+
+<script type="text/javascript">
+
+	var image = ["url(https://bstatic.com/xdata/images/xphoto/1182x887/68794608.jpg?k=155689446d1aa48adbda2d0977fcd6d7608a9f9151562b5055f4baa366583eed&o=?size=S)", "url(https://assets.site-static.com/userFiles/805/image/mexican-food-restaurants-in-alexandria.jpg)","url(https://www.englishclub.com/images/vocabulary/food/chinese/chinese-food.jpg)","url(https://www.nippon.com/en/ncommon/contents/japan-data/169591/169591.jpg","url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8FxlZtN2M1jcyQ2L2twZ7Gtp2oZII2VQd0Q&usqp=CAU)",];
+
+	var box = document.getElementById('picture');
+
+	box.addEventListener("click", function() {
+	var random = Math.floor(5*Math.random());
+	console.log(image[random])
+
+	box.style.backgroundImage = image[
+	random];
+	})
+</script>
+
+</body>
+</html>
