@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		
+		#cow{
+			width:200px;
+			height:200px;
+			border:1px solid black;
+			background-size:cover;
+
+		}
+	</style>
+</head>
+<body>
+
+<center><div id="cow">
+
+</div></center>
+
+<audio id="single" src="moo1.mp3"></audio>
+
+<audio  id="double" src="moo2.mp3"></audio>
+
+<script type="text/javascript">
+
+
+	
+	var cow = document.getElementById("cow");
+var x = 0;
+
+cow.addEventListener("click", function(){
+	x = x+1;
+	console.log(x);
+
+	if (x%2 == 0) {
+		single.play();
+		double.pause();
+		cow.style.backgroundColor = "green";
+		cow.style.backgroundImage = "url(hicow.png)";
+	}
+
+
+	else if (x%2 == 1) {
+		cow.style.backgroundColor = "blue";
+		double.play();
+		single.pause();
+		 cow.style.backgroundImage = "url(kissycow.png)";
+	}
+
+
+})
+
+
+
+</script>
+
+</body>
+</html>

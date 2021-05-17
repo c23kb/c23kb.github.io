@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mother's Day!</title>
+
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap
+	" rel="stylesheet">
+
+	<style type="text/css">
+		#picture{
+			width:500px;
+			height:500px;
+			background-color:lightpink;
+			background-position: center;
+			background-size:contain;
+			background-repeat: no-repeat;
+		}
+
+		a{
+		font-family: 'Dancing Script';
+		text-decoration:none;
+		
+		font-size:xx-large;
+
+
+	}
+
+	#title{
+		font-family: 'Dancing Script';
+		font-size: xx-large;
+		color: darkblue
+	}
+
+	body {background-color: lightblue}
+
+
+	</style>
+
+	</head>
+<body>
+
+	<center><p id=title>Happy Mother's Day! Love you so much. Sorry i'm not very good at coding</p></center>
+
+	<center></center><h3> Things that remind me of you </h3>
+	<div id="picture"></div>
+
+	}
+
+
+<script type="text/javascript">
+
+	var image = ["url(https://images-na.ssl-images-amazon.com/images/I/81q4uC2ZPoL._SL1500_.jpg)", "url(https://i.ytimg.com/vi/ybSvl_yEpTo/hqdefault.jpg)", "url(https://akns-images.eonline.com/eol_images/Entire_Site/2018019/rs_600x600-180119083411-600-dawsons-creek-11918.jpg?fit=around%7C1080:1080&output-quality=90&crop=1080:1080;center,top)","url(https://myfoodstory.com/wp-content/uploads/2018/08/Indian-Raita-How-to-make-it-3-800x617.jpg)","url(https://cdn.shopify.com/s/files/1/1149/5724/products/SWCCLSBT-HTHRNEONRBW-WSPRS5-HTHRNEONRBW2_2000x.jpg?v=1599585890)", "url(https://cdni.llbean.net/is/image/wim/509347_0_44?hei=1095&wid=950&resMode=sharp2&defaultImage=llbstage/A0211793_2)", "url(https://cdn.shopify.com/s/files/1/0116/2710/2265/products/celluma-face.jpg?v=1544635203)", "url(https://cupcakesandcashmere.com/.image/t_share/MTY0NzU2NTE2MDkwNDIzMjUy/img_9926.jpg)", "url(https://imgix.bustle.com/uploads/image/2018/10/25/e5e67a59-17cb-45e3-a659-1e601dc48ad3-stocksy_txp361b7027fz7200_small_2072020.jpg?w=1020&h=574&fit=crop&crop=faces&auto=format%2Ccompress)", "url(https://www.onceuponachef.com/images/2019/07/Big-Italian-Salad.jpg)",];
+
+	var box = document.getElementById('picture');
+
+	box.addEventListener("click", function() {
+	var random = Math.floor(9*Math.random());
+	console.log(image[random])
+
+	box.style.backgroundImage = image[
+	random];
+	})
+</script>
+
+</body>
+</html>
